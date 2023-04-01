@@ -1,0 +1,57 @@
+﻿/*
+Theme Name: Puock-Child
+Theme URI: https://github.com/Licoy/wordpress-theme-puock
+Author: Licoy
+Author URI: https://github.com/Licoy/wordpress-theme-puock
+Template:wordpress-theme-puock-2.7.6
+Description: 支持暗黑与白天模式的自适应多风格主题！
+Version: 2.7.6
+Tags: 高颜值, 自适应, 暗黑模式, 多模块, SEO, 无刷新加载
+License:          GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  puock
+*/
+
+#menus ul li a {
+    position: relative;
+    transition: all .3s;
+}
+#menus>ul> .menu-item > a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 0;
+    height: 2px;
+    background-color: var(--Maincolor);
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: -3px;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#logo img {
+    height: auto;
+}
+
+pre {
+  white-space:pre-wrap; /* css3.0 */ 
+  white-space:-moz-pre-wrap; /* Firefox */ 
+  white-space:-pre-wrap; /* Opera 4-6 */ 
+  white-space:-o-pre-wrap; /* Opera 7 */ 
+  word-wrap:break-word; /* Internet Explorer 5.5+ */
+}
+
+#post-comments .post-comment:hover .hide-info{
+    display: none;
+}
+#post-comments .post-comment:hover>.info>.two-info>.c-sub>.hide-info{
+    display: inline-block;
+}
